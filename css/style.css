@@ -6,9 +6,8 @@
 }
 .container{
     margin: 30px auto;
-    background-color: rgba(183, 183, 183, 0.7);
-    width: 50%;
-    height: 600px;
+    background-color: #ececec;
+    width: 400px;
     border-radius: 30px;
     box-shadow: #2e2e2e;
 }
@@ -20,9 +19,63 @@
 
 .calc-op{
     background-color: black;
-    font-size: 30px;
+    font-size: 40px;
     color: #09cc89;
     text-align: right;
     padding: 20px;
     font-family: 'Seven segment';
+}
+
+.container-calc{
+    display: flex;
+    width: 100%;
+}
+
+.calc-button{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: calc(100% / 2);
+}
+
+.calc-operators{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: calc(100% / 3);
+
+}
+
+/*Tentativo formattazione bottoni */
+
+
+.calc-button > .calc-numbers,
+.calc-operators > .calc-functions {
+    margin: 5px;
+    font-size: 24px;
+    padding: 10px 21px;
+    border-radius: 10px;
+}
+
+/* Formattazione */
+.calc-numbers {
+    background-color: #bbbbbb;
+    border: none;
+}
+.calc-functions {
+    border: none;
+}
+.func{
+    background-color: #ff9f0a;
+    color: white;
+}
+
+.op{
+    background-color: #77a8b0;
+    color: white;
+}
+
+/*Allargo il bottone zero*/
+.big{
+    flex-grow: 1;
 }
